@@ -1,0 +1,100 @@
+body{
+    background-color: #f0f0f0;
+}
+.z0{
+    grid-area: z0;
+}
+.z1{
+    grid-area: z1;
+}
+.z2{
+    grid-area: z2;
+}
+.z3{
+    grid-area: z3;
+}
+.z4{
+    grid-area:z4;
+}
+.z5{
+    grid-area: z5;
+}
+.z6{
+    grid-area: z6;
+}
+.z7{
+    grid-area: z7;
+}
+.z8{
+    grid-area: z8;
+}
+.z9{
+    grid-area: z9;
+}
+.p{
+    grid-area: p;
+}
+.dott{
+    grid-area: dott;
+}
+.mi{
+    grid-area: mi;
+}
+.d{
+    grid-area: d;
+}
+.mu{
+    grid-area: mu;
+}
+.clear{
+    grid-area: clear;
+    background-color:rgb(240, 39, 39);
+}
+.main{
+    font-size: xx-large;
+    display: grid;
+    grid-template: 
+    "result result result result"
+    ". . . d"
+    "z7 z8 z9 mu"
+    "z4 z5 z6 mi"
+    "z1 z2 z3 p"
+    "dott z0 clear equal"
+    /auto ;
+    padding: 10px ;
+    place-items: center;
+    justify-content: center;
+    ;
+}
+button:not(.result , .equal , .clear){
+    background-color: rgb(253, 113, 19);
+}
+.result{
+    border:1px #444444 solid;
+    border-radius: 10px 10px 0 0 ;
+    grid-area:result ; 
+    width: 100%;
+    height: 100px ;
+    opacity: 70%;
+    background-color: rgb(39, 39, 71);
+    color:white;
+    font-size:12px;
+}
+button:not(.result){
+    text-decoration: none;
+    border:1px white solid;
+    border-radius: 50px;
+    height: 80px;
+    width: 80px;
+    font-size:1em;
+    margin:5px;
+    color:white;
+}
+button:not(.result):active{
+    height: 70px;
+    width: 70px;
+}
+.equal{
+    grid-area:equal;
+    background-color:rgb(49, 163, 39);
+}
